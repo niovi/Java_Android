@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.katerina.collisionalert.Main.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:id="@+id/appBarLayout">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:clickable="false">
+
+            <ImageButton
+                android:layout_width="53dp"
+                android:layout_height="48dp"
+
+                android:id="@+id/BackArrow"
+                android:layout_gravity="top|start|center"
+
+                android:showAsAction="always"
+                android:icon="@mipmap/back_arrow"
+                android:contentDescription="@string/back_arrow"
+                android:background="@mipmap/back_arrow"
+                android:layout_weight="1" />
+
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageView2"
+                android:contentDescription=""
+                android:layout_weight="0.06"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:text="@string/title_activity_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/SET_TITLE"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="top|center|center"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal|bold"
+                android:textSize="36sp"
+                android:textColor="@android:color/black" />
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:text="@string/seek_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/parameter01" />
+
+        <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/seek_parameter01" />
+
+        <TextView
+            android:text="@string/seek_light_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/parameter01_time"
+            android:layout_weight="0.08" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/seek_parameter01_time" />
+
+
+        <TextView
+            android:text="@string/seek_proximity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/parameter02"
+            android:layout_weight="0.08" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/seek_parameter02" />
+
+        <TextView
+            android:text="@string/seek_proximity_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/parameter02_time"
+            android:layout_weight="0.08" />
+
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/seek_parameter02_time" />
+
+
+        <TextView
+            android:text="@string/seek_accelerator_X"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/parameter04_X"
+            android:layout_weight="0.08" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/seek_parameter04_X" />
+
+        <TextView
+            android:text="@string/seek_accelerator_Y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/parameter04_Y"
+            android:layout_weight="0.08" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/seek_parameter04_Y" />
+
+        <TextView
+            android:text="@string/seek_accelerator_Z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/parameter04_Z"
+            android:layout_weight="0.08" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/seek_parameter04_Z" />
+
+
+        <TextView
+            android:text="@string/seek_accelerator_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/parameter04_time"
+            android:layout_weight="0.08" />
+
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/seek_parameter04_time" />
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
